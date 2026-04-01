@@ -1,23 +1,30 @@
 "use client";
-import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { useEffect, useRef } from "react";
 
 export function MouseGlow() {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const updateMousePosition = (e: MouseEvent) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
+    const el = ref.current;
+    if (!el) return;
+
+    const onMove = (e: MouseEvent) => {
+      el.style.setProperty("--glow-x", `${e.clientX}px`);
+      el.style.setProperty("--glow-y", `${e.clientY}px`);
     };
-    window.addEventListener("mousemove", updateMousePosition);
-    return () => window.removeEventListener("mousemove", updateMousePosition);
+
+    window.addEventListener("mousemove", onMove);
+    return () => window.removeEventListener("mousemove", onMove);
   }, []);
 
   return (
-    <motion.div
-      className="pointer-events-none fixed inset-0 z-0 transition-opacity duration-300 hidden md:block"
-      animate={{
-        background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(255, 92, 43, 0.08), transparent 40%)`,
+    <div
+      ref={ref}
+      className="pointer-events-none fixed inset-0 z-0 hidden md:block"
+      style={{
+        background:
+          "radial-gradient(600px circle at var(--glow-x, 50%) var(--glow-y, 50%), rgba(183, 65, 14, 0.08), transparent 40%)",
+        transition: "background 0.3s ease",
       }}
     />
   );

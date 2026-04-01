@@ -18,17 +18,28 @@ export function ProjectCard({
   tags,
   detailed = false,
   githubUrl,
+  index = 0,
 }: {
   title: string;
   description: string;
   tags: string[];
   detailed?: boolean;
   githubUrl?: string;
+  index?: number;
 }) {
   return (
     <motion.div
-      whileHover="hover"
-      className={`group relative flex flex-col gap-4 overflow-hidden rounded-2xl border border-white/10 bg-[#0a0a0a]/60 backdrop-blur-lg transition-colors ${detailed ? "p-8 md:p-10" : "p-6"}`}
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-10%" }}
+      transition={{
+        duration: 0.6,
+        type: "spring",
+        bounce: 0.15,
+        delay: index * 0.15,
+      }}
+      whileHover={{ y: -4 }}
+      className={`group relative flex flex-col gap-4 overflow-hidden rounded-2xl border border-white/10 bg-[#0a0a0a]/60 backdrop-blur-lg transition-shadow duration-500 hover:shadow-[0_0_30px_rgba(183,65,14,0.12)] ${detailed ? "p-8 md:p-10" : "p-6"}`}
     >
       <motion.div
         variants={{
@@ -39,7 +50,7 @@ export function ProjectCard({
         className="absolute inset-0 z-0 bg-gradient-to-br from-[#B7410E]/10 to-transparent pointer-events-none"
       />
       <motion.div
-        variants={{ hover: { borderColor: "rgba(255, 92, 43, 0.5)" } }}
+        variants={{ hover: { borderColor: "rgba(183, 65, 14, 0.5)" } }}
         className="absolute inset-0 z-0 rounded-2xl border border-transparent transition-colors duration-300 pointer-events-none"
       />
 

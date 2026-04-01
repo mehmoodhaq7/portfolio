@@ -80,7 +80,7 @@ export function InteractiveTerminal() {
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, type: "spring", bounce: 0.3 }}
-      className="w-full max-w-3xl mt-12 mb-20 overflow-hidden rounded-xl border border-white/20 bg-[#050505] shadow-[0_0_50px_rgba(255,92,43,0.05)] relative mx-auto"
+      className="w-full max-w-3xl mt-12 mb-6 overflow-hidden rounded-xl border border-white/20 bg-[#050505] shadow-[0_0_50px_rgba(183,65,14,0.05)] relative mx-auto"
     >
       <div className="flex items-center justify-between border-b border-white/10 px-4 py-3 bg-[#111]">
         <div className="flex gap-2">

@@ -1,3 +1,5 @@
+"use client";
+
 import { InteractiveTerminal } from "@/components/InteractiveTerminal";
 import { ProjectCard } from "@/components/ProjectCard";
 import { AnimatedSection } from "@/components/AnimatedSection";
@@ -6,6 +8,7 @@ import { InfiniteMarquee } from "@/components/InfiniteMarquee";
 import { TextReveal } from "@/components/TextReveal";
 import { Navbar } from "@/components/Navbar";
 import { ContactForm } from "@/components/ContactForm";
+import { CapabilityCard } from "@/components/CapabilityCard";
 import {
   Mail,
   MapPin,
@@ -187,19 +190,19 @@ export default function Portfolio() {
           </div>
         </AnimatedSection>
 
-        <AnimatedSection className="py-6">
+        <AnimatedSection className="py-4">
           <InteractiveTerminal />
         </AnimatedSection>
       </div>
 
-      <AnimatedSection className="w-full relative z-10 py-0 overflow-hidden border-t border-white/5 bg-black/50 backdrop-blur-md pb-0">
+      <AnimatedSection className="w-full relative z-10 py-0 overflow-hidden border-t border-white/5 bg-black/50 backdrop-blur-md" delay={0.1}>
         <InfiniteMarquee items={techStack} />
       </AnimatedSection>
 
-      <div className="w-full max-w-5xl flex flex-col items-start relative z-10 px-6 py-10 pb-24">
+      <div className="w-full max-w-5xl flex flex-col items-start relative z-10 px-6 py-6 pb-16">
         {/* ── 01 // System Capabilities ── */}
         <section id="expertise" className="w-full scroll-mt-20">
-          <AnimatedSection className="mt-8">
+          <AnimatedSection className="mt-4">
             <div className="mb-10">
               <h2 className="text-4xl font-bold tracking-tight text-white/90">
                 System Capabilities
@@ -210,45 +213,23 @@ export default function Portfolio() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
-              {capabilities.map((cap) => {
-                const Icon = cap.icon;
-                return (
-                  <div
-                    key={cap.title}
-                    className="group relative flex flex-col justify-between p-6 rounded-2xl border border-white/10 bg-[#0a0a0a]/80 backdrop-blur-md hover:border-[#B7410E]/30 transition-all duration-500 overflow-hidden"
-                  >
-                    <div className="flex flex-col gap-3">
-                      <Icon
-                        size={20}
-                        className="text-[#D96A36] opacity-80 group-hover:opacity-100 transition-opacity"
-                      />
-                      <h3 className="text-lg font-bold text-white tracking-tight group-hover:text-[#D96A36] transition-colors">
-                        {cap.title}
-                      </h3>
-                      <p className="text-white/60 text-sm leading-relaxed">
-                        {cap.description}
-                      </p>
-                    </div>
-                    <div className="flex flex-wrap gap-1.5 mt-5">
-                      {cap.tags.map((tag) => (
-                        <span
-                          key={tag}
-                          className="px-2 py-0.5 text-[10px] font-mono rounded-md bg-white/5 border border-white/10 text-white/45 hover:text-[#D96A36] hover:border-[#B7410E]/30 transition-colors cursor-default"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                );
-              })}
+              {capabilities.map((cap, index) => (
+                <CapabilityCard
+                  key={cap.title}
+                  icon={cap.icon}
+                  title={cap.title}
+                  description={cap.description}
+                  tags={cap.tags}
+                  index={index}
+                />
+              ))}
             </div>
           </AnimatedSection>
         </section>
 
         {/* ── 02 // Certification ── */}
         <section id="certifications" className="w-full scroll-mt-20">
-          <AnimatedSection className="mt-12">
+          <AnimatedSection className="mt-16" variant="fadeLeft">
             <div className="mb-6">
               <p className="text-white/50 font-mono text-sm leading-relaxed">
                 02 // CERTIFICATION
@@ -285,7 +266,7 @@ export default function Portfolio() {
 
         {/* ── 03 // Production Systems ── */}
         <section id="projects" className="w-full scroll-mt-20">
-          <AnimatedSection className="mt-20">
+          <AnimatedSection className="mt-16">
             <div className="mb-10 flex flex-col gap-2">
               <h2 className="text-4xl font-bold tracking-tight text-white/90">
                 Production Systems
@@ -312,6 +293,7 @@ export default function Portfolio() {
                   "AWS EC2",
                 ]}
                 githubUrl="https://github.com/mehmoodhaq7/boardgame-cicd-pipeline"
+                index={0}
                 detailed
               />
               <ProjectCard
@@ -334,6 +316,7 @@ export default function Portfolio() {
                   "Loki",
                 ]}
                 githubUrl="https://github.com/mehmoodhaq7/hivebox"
+                index={1}
                 detailed
               />
               <ProjectCard
@@ -349,6 +332,7 @@ export default function Portfolio() {
                   "Reusable Modules",
                 ]}
                 githubUrl="https://github.com/mehmoodhaq7/Terraform_labs-projects"
+                index={2}
                 detailed
               />
             </div>
@@ -356,7 +340,7 @@ export default function Portfolio() {
         </section>
 
         {/* ── 04 // Education ── */}
-        <AnimatedSection className="mt-20">
+        <AnimatedSection className="mt-16" variant="fadeScale">
           <div className="mb-10 flex flex-col gap-2">
             <h2 className="text-4xl font-bold tracking-tight text-white/90">
               Education
@@ -397,7 +381,7 @@ export default function Portfolio() {
         </AnimatedSection>
 
         <section id="contact" className="w-full scroll-mt-20">
-          <AnimatedSection className="w-full mt-24">
+          <AnimatedSection className="w-full mt-16">
             <div className="flex flex-col gap-10 p-10 md:p-16 rounded-3xl border border-[#B7410E]/30 bg-[#0A0A0A]/80 backdrop-blur-xl relative overflow-hidden group shadow-[0_0_50px_rgba(255,92,43,0.1)] hover:shadow-[0_0_80px_rgba(255,92,43,0.2)] transition-shadow duration-700">
               <div className="absolute inset-0 z-0 bg-gradient-to-r from-[#B7410E]/10 via-transparent to-[#B7410E]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
 
