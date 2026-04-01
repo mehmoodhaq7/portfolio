@@ -122,7 +122,7 @@ export default function Portfolio() {
   ];
 
   return (
-    <main className="flex flex-col items-center min-h-screen overflow-x-hidden selection:bg-[#FF8E3E]/30 selection:text-white relative bg-[#000000]">
+    <main className="flex flex-col items-center min-h-screen overflow-x-hidden selection:bg-[#D96A36]/30 selection:text-white relative bg-[#000000]">
       <Navbar />
       <MouseGlow />
       <div className="fixed inset-0 z-0 pointer-events-none bg-dot-pattern" />
@@ -130,10 +130,10 @@ export default function Portfolio() {
       <div className="w-full max-w-5xl flex flex-col items-start relative z-10 px-6 py-16 md:py-20">
         <AnimatedSection delay={0.1} className="py-0">
           <div className="flex flex-col gap-8">
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#FF5C2B]/30 bg-[#FF5C2B]/10 px-4 py-1.5 text-xs text-[#FF8E3E] font-mono tracking-wide shadow-[0_0_15px_rgba(255,92,43,0.15)]">
+            <div className="inline-flex items-center gap-2 rounded-full border border-[#B7410E]/30 bg-[#B7410E]/10 px-4 py-1.5 text-xs text-[#D96A36] font-mono tracking-wide shadow-[0_0_15px_rgba(255,92,43,0.15)]">
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FF8E3E] opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#FF8E3E]"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D96A36] opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#D96A36]"></span>
               </span>
               SYSTEM ONLINE // AVAILABLE FOR HIRE
             </div>
@@ -160,7 +160,7 @@ export default function Portfolio() {
             <div className="flex flex-wrap items-center gap-6 mt-4 font-mono text-sm text-white/50">
               <a
                 href="mailto:mehmoodulhaq97@gmail.com"
-                className="flex items-center gap-2 hover:text-[#FF8E3E] transition-colors"
+                className="flex items-center gap-2 hover:text-[#D96A36] transition-colors"
               >
                 <Mail size={16} /> Email
               </a>
@@ -168,7 +168,7 @@ export default function Portfolio() {
                 href="https://github.com/mehmoodhaq7"
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-2 hover:text-[#FF8E3E] transition-colors"
+                className="flex items-center gap-2 hover:text-[#D96A36] transition-colors"
               >
                 <GithubIcon size={16} /> GitHub
               </a>
@@ -176,12 +176,12 @@ export default function Portfolio() {
                 href="https://linkedin.com/in/mehmoodhaq"
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-2 hover:text-[#FF8E3E] transition-colors"
+                className="flex items-center gap-2 hover:text-[#D96A36] transition-colors"
               >
                 <LinkedinIcon size={16} /> LinkedIn
               </a>
-              <span className="flex items-center gap-2 text-[#FF8E3E]">
-                <MapPin size={16} className="text-[#FF8E3E]" /> Lahore, Pakistan
+              <span className="flex items-center gap-2 text-[#D96A36]">
+                <MapPin size={16} className="text-[#D96A36]" /> Lahore, Pakistan
               </span>
             </div>
           </div>
@@ -215,14 +215,14 @@ export default function Portfolio() {
                 return (
                   <div
                     key={cap.title}
-                    className="group relative flex flex-col justify-between p-6 rounded-2xl border border-white/10 bg-[#0a0a0a]/80 backdrop-blur-md hover:border-[#FF5C2B]/30 transition-all duration-500 overflow-hidden"
+                    className="group relative flex flex-col justify-between p-6 rounded-2xl border border-white/10 bg-[#0a0a0a]/80 backdrop-blur-md hover:border-[#B7410E]/30 transition-all duration-500 overflow-hidden"
                   >
                     <div className="flex flex-col gap-3">
                       <Icon
                         size={20}
-                        className="text-[#FF8E3E] opacity-80 group-hover:opacity-100 transition-opacity"
+                        className="text-[#D96A36] opacity-80 group-hover:opacity-100 transition-opacity"
                       />
-                      <h3 className="text-lg font-bold text-white tracking-tight group-hover:text-[#FF8E3E] transition-colors">
+                      <h3 className="text-lg font-bold text-white tracking-tight group-hover:text-[#D96A36] transition-colors">
                         {cap.title}
                       </h3>
                       <p className="text-white/60 text-sm leading-relaxed">
@@ -233,7 +233,7 @@ export default function Portfolio() {
                       {cap.tags.map((tag) => (
                         <span
                           key={tag}
-                          className="px-2 py-0.5 text-[10px] font-mono rounded-md bg-white/5 border border-white/10 text-white/45 hover:text-[#FF8E3E] hover:border-[#FF5C2B]/30 transition-colors cursor-default"
+                          className="px-2 py-0.5 text-[10px] font-mono rounded-md bg-white/5 border border-white/10 text-white/45 hover:text-[#D96A36] hover:border-[#B7410E]/30 transition-colors cursor-default"
                         >
                           {tag}
                         </span>
@@ -256,7 +256,7 @@ export default function Portfolio() {
             </div>
 
             <div className="w-full flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 p-5 sm:p-6 rounded-xl border border-white/10 bg-[#0a0a0a]/80 backdrop-blur-md">
-              <Award size={22} className="text-[#FF8E3E] flex-shrink-0" />
+              <Award size={22} className="text-[#D96A36] flex-shrink-0" />
               <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 flex-1 min-w-0">
                 <h3 className="text-sm font-semibold text-white tracking-tight whitespace-nowrap">
                   AWS Certified Solutions Architect – Associate
@@ -266,7 +266,7 @@ export default function Portfolio() {
                 </span>
               </div>
               <div className="flex items-center gap-3 flex-shrink-0">
-                <span className="text-[10px] text-[#FF8E3E] uppercase tracking-widest bg-[#FF5C2B]/10 py-1 px-2.5 rounded-full border border-[#FF5C2B]/20 font-mono">
+                <span className="text-[10px] text-[#D96A36] uppercase tracking-widest bg-[#B7410E]/10 py-1 px-2.5 rounded-full border border-[#B7410E]/20 font-mono">
                   FEB 2026
                 </span>
                 <span className="flex items-center gap-1.5">
@@ -366,11 +366,11 @@ export default function Portfolio() {
             </p>
           </div>
 
-          <div className="w-full flex flex-col md:flex-row items-start gap-6 p-8 md:p-10 rounded-2xl border border-white/10 bg-[#0a0a0a]/80 backdrop-blur-md relative overflow-hidden group hover:border-[#FF5C2B]/30 transition-all duration-500 shadow-xl">
+          <div className="w-full flex flex-col md:flex-row items-start gap-6 p-8 md:p-10 rounded-2xl border border-white/10 bg-[#0a0a0a]/80 backdrop-blur-md relative overflow-hidden group hover:border-[#B7410E]/30 transition-all duration-500 shadow-xl">
             <div className="absolute inset-0 z-0 bg-gradient-to-r from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
-            <div className="relative z-10 p-5 rounded-xl border border-white/10 bg-white/5 group-hover:bg-[#FF5C2B]/10 group-hover:text-[#FF8E3E] transition-colors duration-500 flex-shrink-0 group-hover:scale-110">
+            <div className="relative z-10 p-5 rounded-xl border border-white/10 bg-white/5 group-hover:bg-[#B7410E]/10 group-hover:text-[#D96A36] transition-colors duration-500 flex-shrink-0 group-hover:scale-110">
               <BookOpen
-                className="text-white/60 group-hover:text-[#FF8E3E] transition-colors"
+                className="text-white/60 group-hover:text-[#D96A36] transition-colors"
                 size={32}
               />
             </div>
@@ -378,7 +378,7 @@ export default function Portfolio() {
               <h3 className="text-2xl font-bold text-white tracking-tight">
                 CECOS University of IT & Emerging Sciences
               </h3>
-              <p className="text-[#FF8E3E] font-medium mt-2 text-lg">
+              <p className="text-[#D96A36] font-medium mt-2 text-lg">
                 Bachelor of Science — Computer Science
               </p>
               <div className="flex flex-wrap items-center gap-4 mt-6 font-mono text-sm text-white/60 w-full">
@@ -388,7 +388,7 @@ export default function Portfolio() {
                 <span className="flex items-center gap-2 px-3 py-1.5 bg-white/5 border border-white/10 rounded-md">
                   Graduated: Oct 2025
                 </span>
-                <span className="flex items-center gap-2 px-3 py-1.5 bg-white/5 border border-white/10 rounded-md shadow-[0_0_10px_rgba(255,92,43,0.1)] text-[#FF8E3E]">
+                <span className="flex items-center gap-2 px-3 py-1.5 bg-white/5 border border-white/10 rounded-md shadow-[0_0_10px_rgba(255,92,43,0.1)] text-[#D96A36]">
                   CGPA: 3.2 / 4.0
                 </span>
               </div>
@@ -398,11 +398,11 @@ export default function Portfolio() {
 
         <section id="contact" className="w-full scroll-mt-20">
           <AnimatedSection className="w-full mt-24">
-            <div className="flex flex-col gap-10 p-10 md:p-16 rounded-3xl border border-[#FF5C2B]/30 bg-[#0A0A0A]/80 backdrop-blur-xl relative overflow-hidden group shadow-[0_0_50px_rgba(255,92,43,0.1)] hover:shadow-[0_0_80px_rgba(255,92,43,0.2)] transition-shadow duration-700">
-              <div className="absolute inset-0 z-0 bg-gradient-to-r from-[#FF5C2B]/10 via-transparent to-[#FF5C2B]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
+            <div className="flex flex-col gap-10 p-10 md:p-16 rounded-3xl border border-[#B7410E]/30 bg-[#0A0A0A]/80 backdrop-blur-xl relative overflow-hidden group shadow-[0_0_50px_rgba(255,92,43,0.1)] hover:shadow-[0_0_80px_rgba(255,92,43,0.2)] transition-shadow duration-700">
+              <div className="absolute inset-0 z-0 bg-gradient-to-r from-[#B7410E]/10 via-transparent to-[#B7410E]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
 
-              <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#FF5C2B]/80 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-[1500ms] ease-in-out" />
-              <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#FF5C2B]/80 to-transparent translate-x-full group-hover:-translate-x-full transition-transform duration-[1500ms] ease-in-out" />
+              <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#B7410E]/80 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-[1500ms] ease-in-out" />
+              <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#B7410E]/80 to-transparent translate-x-full group-hover:-translate-x-full transition-transform duration-[1500ms] ease-in-out" />
 
               <div className="z-10 relative flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
                 <div className="max-w-xl">

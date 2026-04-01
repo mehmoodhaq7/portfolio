@@ -36,7 +36,7 @@ export function ProjectCard({
         }}
         initial={{ opacity: 0 }}
         transition={{ duration: 0.4 }}
-        className="absolute inset-0 z-0 bg-gradient-to-br from-[#FF5C2B]/10 to-transparent pointer-events-none"
+        className="absolute inset-0 z-0 bg-gradient-to-br from-[#B7410E]/10 to-transparent pointer-events-none"
       />
       <motion.div
         variants={{ hover: { borderColor: "rgba(255, 92, 43, 0.5)" } }}
@@ -44,15 +44,15 @@ export function ProjectCard({
       />
 
       <div className="z-10 flex items-center justify-between">
-        <div className="p-3 rounded-xl border border-white/5 bg-white/5 group-hover:bg-[#FF5C2B]/10 transition-colors duration-500">
-          <FolderGit2 className="text-white/60 group-hover:text-[#FF8E3E] transition-colors" size={detailed ? 28 : 20} />
+        <div className="p-3 rounded-xl border border-white/5 bg-white/5 group-hover:bg-[#B7410E]/10 transition-colors duration-500">
+          <FolderGit2 className="text-white/60 group-hover:text-[#D96A36] transition-colors" size={detailed ? 28 : 20} />
         </div>
         {githubUrl && (
           <a
             href={githubUrl}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-white/10 bg-white/5 text-white/50 text-xs font-mono tracking-wide hover:border-[#FF5C2B]/40 hover:text-[#FF8E3E] hover:bg-[#FF5C2B]/10 transition-all duration-300"
+            className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-white/10 bg-white/5 text-white/50 text-xs font-mono tracking-wide hover:border-[#B7410E]/40 hover:text-[#D96A36] hover:bg-[#B7410E]/10 transition-all duration-300"
           >
             <GithubIcon size={14} />
             Source
@@ -61,7 +61,7 @@ export function ProjectCard({
       </div>
       
       <div className="z-10 mt-4 flex flex-col flex-1">
-        <h3 className={`${detailed ? "text-2xl" : "text-lg"} font-bold text-white group-hover:text-[#FF8E3E] transition-colors tracking-tight`}>
+        <h3 className={`${detailed ? "text-2xl" : "text-lg"} font-bold text-white group-hover:text-[#D96A36] transition-colors tracking-tight`}>
           {title}
         </h3>
         <p className={`mt-4 text-white/60 font-sans ${detailed ? "text-base leading-relaxed" : "text-sm leading-relaxed"}`}>

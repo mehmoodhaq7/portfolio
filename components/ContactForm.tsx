@@ -44,7 +44,7 @@ export function ContactForm() {
   };
 
   const inputClasses =
-    "w-full rounded-xl border border-white/10 bg-white/5 px-5 py-3.5 text-sm text-white placeholder:text-white/30 outline-none focus:border-[#FF5C2B]/50 focus:ring-1 focus:ring-[#FF5C2B]/30 focus:bg-white/[0.07] transition-all duration-300 font-mono backdrop-blur-sm";
+    "w-full rounded-xl border border-white/10 bg-white/5 px-5 py-3.5 text-sm text-white placeholder:text-white/30 outline-none focus:border-[#B7410E]/50 focus:ring-1 focus:ring-[#B7410E]/30 focus:bg-white/[0.07] transition-all duration-300 font-mono backdrop-blur-sm";
 
   return (
     <form
@@ -126,7 +126,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={status === "sending"}
-        className="group relative mt-2 flex items-center justify-center gap-3 rounded-xl bg-gradient-to-r from-[#FF5C2B] to-[#FF8E3E] px-8 py-4 font-bold text-base text-white shadow-[0_0_25px_rgba(255,92,43,0.3)] transition-all duration-300 hover:shadow-[0_0_40px_rgba(255,92,43,0.5)] hover:scale-[1.02] active:scale-[0.98] disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:hover:shadow-[0_0_25px_rgba(255,92,43,0.3)] cursor-pointer overflow-hidden"
+        className="group relative mt-2 flex items-center justify-center gap-3 rounded-xl bg-gradient-to-r from-[#B7410E] to-[#D96A36] px-8 py-4 font-bold text-base text-white shadow-[0_0_25px_rgba(255,92,43,0.3)] transition-all duration-300 hover:shadow-[0_0_40px_rgba(255,92,43,0.5)] hover:scale-[1.02] active:scale-[0.98] disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:hover:shadow-[0_0_25px_rgba(255,92,43,0.3)] cursor-pointer overflow-hidden"
       >
         {/* Shimmer effect */}
         <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/20 to-transparent pointer-events-none" />

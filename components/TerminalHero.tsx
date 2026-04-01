@@ -47,7 +47,7 @@ export function TerminalHero() {
             initial={{ opacity: 0, x: -10 }}
             animate={visibleLines > idx ? { opacity: 1, x: 0 } : { opacity: 0, x: -10 }}
             transition={{ duration: 0.3 }}
-            className={`flex items-center gap-3 ${idx === codeLines.length - 1 ? "text-[#FF8E3E] font-medium mt-4" : ""}`}
+            className={`flex items-center gap-3 ${idx === codeLines.length - 1 ? "text-[#D96A36] font-medium mt-4" : ""}`}
           >
             {visibleLines > idx && <span>{line}</span>}
           </motion.div>
@@ -57,7 +57,7 @@ export function TerminalHero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: [0, 1, 0] }}
             transition={{ duration: 1, repeat: Infinity }}
-            className="w-2 h-4 bg-[#FF8E3E] mt-1 inline-block"
+            className="w-2 h-4 bg-[#D96A36] mt-1 inline-block"
           />
         )}
       </div>

@@ -23,10 +23,10 @@ export function TelemetryDash() {
   }, []);
 
   return (
-    <div className="w-full h-full flex flex-col justify-between p-8 rounded-2xl border border-white/10 bg-[#0a0a0a]/80 backdrop-blur-md hover:border-[#FF5C2B]/30 transition-all duration-500">
+    <div className="w-full h-full flex flex-col justify-between p-8 rounded-2xl border border-white/10 bg-[#0a0a0a]/80 backdrop-blur-md hover:border-[#B7410E]/30 transition-all duration-500">
       <div className="flex justify-between items-start mb-4">
         <h3 className="text-xl font-bold text-white tracking-tight flex items-center gap-2">
-          <Activity size={20} className="text-[#FF5C2B] animate-pulse" />
+          <Activity size={20} className="text-[#B7410E] animate-pulse" />
           Live Telemetry
         </h3>
         <span className="px-2 py-1 bg-green-500/10 text-green-500 border border-green-500/20 text-[10px] uppercase font-mono rounded-md shadow-[0_0_10px_rgba(34,197,94,0.2)]">Healthy</span>
@@ -40,17 +40,17 @@ export function TelemetryDash() {
             initial={{ height: 0 }}
             animate={{ height: `${h}%` }}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            className={`flex-1 rounded-t-sm ${i === data.length - 1 ? 'bg-[#FF8E3E]' : 'bg-white/20'}`}
+            className={`flex-1 rounded-t-sm ${i === data.length - 1 ? 'bg-[#D96A36]' : 'bg-white/20'}`}
           />
         ))}
       </div>
       
       <div className="flex justify-between mt-6 text-xs font-mono text-white/40">
         <span className="tracking-wider flex items-center gap-2">
-          <span className="w-2 h-2 rounded-full bg-[#FF8E3E] inline-block"/>
+          <span className="w-2 h-2 rounded-full bg-[#D96A36] inline-block"/>
           CPU ALLOCATION
         </span>
-        <span className="text-[#FF8E3E] font-bold">{mounted ? (data[data.length-1]).toFixed(1) : "20.0"}%</span>
+        <span className="text-[#D96A36] font-bold">{mounted ? (data[data.length-1]).toFixed(1) : "20.0"}%</span>
       </div>
     </div>
   );

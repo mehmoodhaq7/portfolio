@@ -77,9 +77,9 @@ export function Navbar() {
             setMobileOpen(false);
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
-          className="font-mono text-sm text-white/70 hover:text-[#FF8E3E] transition-colors tracking-tight"
+          className="font-mono text-sm text-white/70 hover:text-[#D96A36] transition-colors tracking-tight"
         >
-          Mehmood<span className="text-[#FF5C2B]">_</span>
+          Mehmood<span className="text-[#B7410E]">_</span>
         </a>
 
         {/* Desktop links */}
@@ -89,7 +89,7 @@ export function Navbar() {
               key={link.href}
               href={link.href}
               onClick={(e) => handleClick(e, link.href)}
-              className="px-3 py-1.5 text-[11px] font-mono uppercase tracking-widest text-white/50 hover:text-[#FF8E3E] transition-colors rounded-md hover:bg-white/5"
+              className="px-3 py-1.5 text-[11px] font-mono uppercase tracking-widest text-white/50 hover:text-[#D96A36] transition-colors rounded-md hover:bg-white/5"
             >
               {link.label}
             </a>
@@ -99,7 +99,7 @@ export function Navbar() {
         {/* Hamburger button (mobile only) */}
         <button
           onClick={() => setMobileOpen((prev) => !prev)}
-          className="md:hidden relative w-8 h-8 flex items-center justify-center text-white/70 hover:text-[#FF8E3E] transition-colors"
+          className="md:hidden relative w-8 h-8 flex items-center justify-center text-white/70 hover:text-[#D96A36] transition-colors"
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
         >
           <span
@@ -132,7 +132,7 @@ export function Navbar() {
               key={link.href}
               href={link.href}
               onClick={(e) => handleClick(e, link.href)}
-              className="px-4 py-3 text-sm font-mono uppercase tracking-widest text-white/50 hover:text-[#FF8E3E] hover:bg-white/5 transition-colors rounded-lg"
+              className="px-4 py-3 text-sm font-mono uppercase tracking-widest text-white/50 hover:text-[#D96A36] hover:bg-white/5 transition-colors rounded-lg"
             >
               {link.label}
             </a>
