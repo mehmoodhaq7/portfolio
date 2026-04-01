@@ -305,6 +305,7 @@ export default function Portfolio() {
                   "SonarQube",
                   "Nexus",
                   "Docker",
+                  "Trivy",
                   "Kubernetes",
                   "Prometheus",
                   "Grafana",
@@ -318,13 +319,19 @@ export default function Portfolio() {
                 description="Production-grade GitOps pipeline deployed on AWS EKS via Terraform. Provisioned complete VPC infrastructure with managed node groups. Implemented ArgoCD for declarative sync and self-healing. Integrated multi-layer DevSecOps (Dependabot, Trivy, SonarCloud, Terrascan) with distributed caching via Valkey and object storage with MinIO."
                 tags={[
                   "Python",
-                  "Flask",
+                  "Terraform",
+                  "AWS EKS",
                   "Helm",
                   "Kustomize",
-                  "Terraform",
+                  "ArgoCD",
                   "GitHub Actions",
+                  "Trivy",
+                  "SonarCloud",
+                  "Terrascan",
+                  "Dependabot",
+                  "Prometheus",
+                  "Grafana",
                   "Loki",
-                  "AWS EKS",
                 ]}
                 githubUrl="https://github.com/mehmoodhaq7/hivebox"
                 detailed
@@ -334,12 +341,12 @@ export default function Portfolio() {
                 description="Provisioned a production-ready VPC with public subnets, Internet Gateways, and EC2 instances via Terraform. Automated complex IAM role creation using YAML-driven dynamic configurations with least-privilege principles. Deployed S3-hosted static applications securely utilizing custom modularized Terraform logic."
                 tags={[
                   "Terraform",
-                  "AWS API",
                   "HCL",
-                  "IAM",
-                  "VPC",
-                  "S3",
+                  "AWS VPC",
                   "EC2",
+                  "IAM",
+                  "S3",
+                  "Reusable Modules",
                 ]}
                 githubUrl="https://github.com/mehmoodhaq7/Terraform_labs-projects"
                 detailed
