@@ -173,7 +173,7 @@ export default function Portfolio() {
                 <GithubIcon size={16} /> GitHub
               </a>
               <a
-                href="https://linkedin.com/in/nednmehmoodhaq"
+                href="https://linkedin.com/in/nmehmoodhaq"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-2 hover:text-[#FF8E3E] transition-colors"
