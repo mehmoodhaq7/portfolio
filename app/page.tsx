@@ -195,7 +195,10 @@ export default function Portfolio() {
         </AnimatedSection>
       </div>
 
-      <AnimatedSection className="w-full relative z-10 py-0 overflow-hidden border-t border-white/5 bg-black/50 backdrop-blur-md" delay={0.1}>
+      <AnimatedSection
+        className="w-full relative z-10 py-0 overflow-hidden border-t border-white/5 bg-black/50 backdrop-blur-md"
+        delay={0.1}
+      >
         <InfiniteMarquee items={techStack} />
       </AnimatedSection>
 
@@ -236,15 +239,27 @@ export default function Portfolio() {
               </p>
             </div>
 
-            <div className="w-full flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 p-5 sm:p-6 rounded-xl border border-white/10 bg-[#0a0a0a]/80 backdrop-blur-md">
-              <Award size={22} className="text-[#D96A36] flex-shrink-0" />
-              <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 flex-1 min-w-0">
-                <h3 className="text-sm font-semibold text-white tracking-tight whitespace-nowrap">
+            <div className="w-full flex items-center gap-5 p-5 sm:p-6 rounded-xl border border-white/10 bg-[#0a0a0a]/80 backdrop-blur-md">
+              <img
+                src="https://images.credly.com/size/340x340/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png"
+                alt="AWS Certified Solutions Architect Associate Badge"
+                width={52}
+                height={52}
+                className="flex-shrink-0"
+              />
+              <div className="flex flex-col gap-1.5 flex-1 min-w-0">
+                <h3 className="text-sm font-semibold text-white tracking-tight">
                   AWS Certified Solutions Architect – Associate
                 </h3>
-                <span className="text-xs text-white/40 font-mono truncate">
-                  Validation: 0acaca4f1dc348b0a32293afbeb10bcf
-                </span>
+                <a
+                  href="https://www.credly.com/badges/0eb570ea-927f-48ea-a44c-a5f01cd0c940/public_url"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-1.5 w-fit text-[11px] font-mono tracking-wide text-[#D96A36]/70 hover:text-[#D96A36] transition-colors duration-300"
+                >
+                  <ExternalLink size={11} />
+                  Verify on Credly
+                </a>
               </div>
               <div className="flex items-center gap-3 flex-shrink-0">
                 <span className="text-[10px] text-[#D96A36] uppercase tracking-widest bg-[#B7410E]/10 py-1 px-2.5 rounded-full border border-[#B7410E]/20 font-mono">
@@ -333,6 +348,28 @@ export default function Portfolio() {
                 ]}
                 githubUrl="https://github.com/mehmoodhaq7/Terraform_labs-projects"
                 index={2}
+                detailed
+              />
+
+              <ProjectCard
+                title="Containerized Microservices Platform"
+                description="Built a Docker Compose microservices architecture with Nginx routing requests to multiple Node.js services backed by MongoDB.
+Used multi-stage builds with distroless images to reduce image size and attack surface.
+Configured isolated networks and volumes for secure communication and persistent storage"
+                tags={[
+                  "Docker",
+                  "Docker Compose",
+                  "Nginx",
+                  "Node.js",
+                  "MongoDB",
+                  "Microservices",
+                  "Bash",
+                  "Distroless Images",
+                  "Container Networking",
+                  "Reverse Proxy",
+                ]}
+                githubUrl="https://github.com/mehmoodhaq7/docker-projects/tree/main/key-value-app"
+                index={3}
                 detailed
               />
             </div>
