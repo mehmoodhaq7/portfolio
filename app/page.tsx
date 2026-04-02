@@ -235,33 +235,36 @@ export default function Portfolio() {
           <AnimatedSection className="mt-16" variant="fadeLeft">
             <div className="mb-6">
               <p className="text-white/50 font-mono text-sm leading-relaxed">
-                02 // CERTIFICATION
+                02 // CERTIFICATIONS
               </p>
             </div>
 
-            <div className="w-full flex items-center gap-5 p-5 sm:p-6 rounded-xl border border-white/10 bg-[#0a0a0a]/80 backdrop-blur-md">
-              <img
-                src="https://images.credly.com/size/340x340/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png"
-                alt="AWS Certified Solutions Architect Associate Badge"
-                width={52}
-                height={52}
-                className="flex-shrink-0"
-              />
-              <div className="flex flex-col gap-1.5 flex-1 min-w-0">
-                <h3 className="text-sm font-semibold text-white tracking-tight">
-                  AWS Certified Solutions Architect – Associate
-                </h3>
-                <a
-                  href="https://www.credly.com/badges/0eb570ea-927f-48ea-a44c-a5f01cd0c940/public_url"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-1.5 w-fit text-[11px] font-mono tracking-wide text-[#D96A36]/70 hover:text-[#D96A36] transition-colors duration-300"
-                >
-                  <ExternalLink size={11} />
-                  Verify on Credly
-                </a>
+            <div className="w-full flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-5 p-5 sm:p-6 rounded-xl border border-white/10 bg-[#0a0a0a]/80 backdrop-blur-md">
+              <div className="flex items-start sm:items-center gap-4 sm:gap-5 flex-1 min-w-0">
+                <img
+                  src="https://images.credly.com/size/340x340/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png"
+                  alt="AWS Certified Solutions Architect Associate Badge"
+                  width={52}
+                  height={52}
+                  className="flex-shrink-0 mt-1 sm:mt-0"
+                />
+                <div className="flex flex-col gap-1.5 flex-1 min-w-0">
+                  <h3 className="text-sm font-semibold text-white tracking-tight leading-snug">
+                    AWS Certified Solutions Architect – Associate
+                  </h3>
+                  <a
+                    href="https://www.credly.com/badges/0eb570ea-927f-48ea-a44c-a5f01cd0c940/public_url"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1.5 w-fit text-[11px] font-mono tracking-wide text-[#D96A36]/70 hover:text-[#D96A36] transition-colors duration-300"
+                  >
+                    <ExternalLink size={11} />
+                    Verify
+                  </a>
+                </div>
               </div>
-              <div className="flex items-center gap-3 flex-shrink-0">
+
+              <div className="flex items-center gap-3 flex-shrink-0 ml-[68px] sm:ml-0 mt-1 sm:mt-0">
                 <span className="text-[10px] text-[#D96A36] uppercase tracking-widest bg-[#B7410E]/10 py-1 px-2.5 rounded-full border border-[#B7410E]/20 font-mono">
                   FEB 2026
                 </span>
@@ -270,6 +273,131 @@ export default function Portfolio() {
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
                   </span>
+                  <span className="text-[10px] uppercase tracking-widest font-mono text-green-500">
+                    Active
+                  </span>
+                </span>
+              </div>
+            </div>
+
+            <div className="w-full flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-5 p-5 sm:p-6 rounded-xl border border-white/10 bg-[#0a0a0a]/80 backdrop-blur-md">
+              <div className="flex items-start sm:items-center gap-4 sm:gap-5 flex-1 min-w-0">
+                <img
+                  src="https://images.credly.com/size/340x340/images/024d0122-724d-4c5a-bd83-cfe3c4b7a073/image.png"
+                  alt="GitHub Foundations Badge"
+                  width={52}
+                  height={52}
+                  className="flex-shrink-0 mt-1 sm:mt-0"
+                />
+                <div className="flex flex-col gap-1.5 flex-1 min-w-0">
+                  <h3 className="text-sm font-semibold text-white tracking-tight leading-snug">
+                    GitHub Foundations
+                  </h3>
+                  <a
+                    href="https://learn.microsoft.com/api/credentials/share/en-us/mehmoodhaq-1209/2077C44A6BB0853?sharingId=6D520A7E914D4D27"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1.5 w-fit text-[11px] font-mono tracking-wide text-[#D96A36]/70 hover:text-[#D96A36] transition-colors duration-300"
+                  >
+                    <ExternalLink size={11} />
+                    Verify
+                  </a>
+                </div>
+              </div>
+              <div className="flex items-center gap-3 flex-shrink-0 ml-[68px] sm:ml-0 mt-1 sm:mt-0">
+                <span className="text-[10px] text-[#D96A36] uppercase tracking-widest bg-[#B7410E]/10 py-1 px-2.5 rounded-full border border-[#B7410E]/20 font-mono">
+                  MAR 2026
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                  </span>
+                  <span className="text-[10px] uppercase tracking-widest font-mono text-green-500">
+                    Active
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div className="w-full flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-5 p-5 sm:p-6 rounded-xl border border-white/10 bg-[#0a0a0a]/80 backdrop-blur-md">
+              <div className="flex items-start sm:items-center gap-4 sm:gap-5 flex-1 min-w-0">
+                <img
+                  src="https://images.credly.com/size/220x220/images/97a95d07-04c3-4afb-952a-6bcf46ddb87e/blob"
+                  alt="LFS101 Linux Foundation Badge"
+                  width={52}
+                  height={52}
+                  className="flex-shrink-0 mt-1 sm:mt-0"
+                />
+                <div className="flex flex-col gap-1.5 flex-1 min-w-0">
+                  <h3 className="text-sm font-semibold text-white tracking-tight leading-snug">
+                    LFS101: Introduction to Linux
+                  </h3>
+                  <a
+                    href="https://www.credly.com/badges/5b86d3d8-8fe1-4472-9768-4ca225d94267/public_url"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1.5 w-fit text-[11px] font-mono tracking-wide text-[#D96A36]/70 hover:text-[#D96A36] transition-colors duration-300"
+                  >
+                    <ExternalLink size={11} />
+                    Verify
+                  </a>
+                </div>
+              </div>
+              <div className="flex items-center gap-3 flex-shrink-0 ml-[68px] sm:ml-0 mt-1 sm:mt-0">
+                <span className="text-[10px] text-[#D96A36] uppercase tracking-widest bg-[#B7410E]/10 py-1 px-2.5 rounded-full border border-[#B7410E]/20 font-mono">
+                  Training
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                  </span>
+                  <span className="text-[10px] uppercase tracking-widest font-mono text-green-500">
+                    Active
+                  </span>
+                </span>
+              </div>
+            </div>
+
+            <div className="w-full flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-5 p-5 sm:p-6 rounded-xl border border-white/10 bg-[#0a0a0a]/80 backdrop-blur-md">
+              <div className="flex items-start sm:items-center gap-4 sm:gap-5 flex-1 min-w-0">
+                <img
+                  src="https://images.credly.com/size/220x220/images/30816e43-2550-4e1c-be22-3f03c5573bb9/blob"
+                  alt="AWS Cloud Quest Badge"
+                  width={52}
+                  height={52}
+                  className="flex-shrink-0 mt-1 sm:mt-0"
+                />
+
+                <div className="flex flex-col gap-1.5 flex-1 min-w-0">
+                  <h3 className="text-sm font-semibold text-white tracking-tight leading-snug">
+                    AWS Cloud Quest: Cloud Practitioner
+                  </h3>
+
+                  <a
+                    href="https://www.credly.com/badges/c556b572-215b-4741-a243-5fb670ce1840/public_url"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1.5 w-fit text-[11px] font-mono tracking-wide text-[#D96A36]/70 hover:text-[#D96A36] transition-colors duration-300"
+                  >
+                    <ExternalLink size={11} />
+                    Verify
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3 flex-shrink-0 ml-[68px] sm:ml-0 mt-1 sm:mt-0">
+                <span className="text-[10px] text-[#D96A36] uppercase tracking-widest bg-[#B7410E]/10 py-1 px-2.5 rounded-full border border-[#B7410E]/20 font-mono">
+                  Training
+                </span>
+
+                <span className="flex items-center gap-1.5">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
+
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                  </span>
+
                   <span className="text-[10px] uppercase tracking-widest font-mono text-green-500">
                     Active
                   </span>
