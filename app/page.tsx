@@ -239,7 +239,8 @@ export default function Portfolio() {
               </p>
             </div>
 
-            <div className="w-full flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-5 p-5 sm:p-6 rounded-xl border border-white/10 bg-[#0a0a0a]/80 backdrop-blur-md">
+            <div className="flex flex-col gap-4 w-full">
+              <div className="w-full flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-5 p-5 sm:p-6 rounded-xl border border-white/10 bg-[#0a0a0a]/80 backdrop-blur-md">
               <div className="flex items-start sm:items-center gap-4 sm:gap-5 flex-1 min-w-0">
                 <img
                   src="https://images.credly.com/size/340x340/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png"
@@ -403,6 +404,7 @@ export default function Portfolio() {
                   </span>
                 </span>
               </div>
+            </div>
             </div>
           </AnimatedSection>
         </section>
